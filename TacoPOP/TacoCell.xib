@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TacoCell" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacoPOP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="152"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Brisket" translatesAutoresizingMaskIntoConstraints="NO" id="QN9-gb-wQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="151" height="118"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brisket Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="UgZ-Wa-uxM">
+                        <rect key="frame" x="0.0" y="123" width="151" height="24"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QN9-gb-wQ7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="73M-YB-aBl"/>
+                <constraint firstItem="UgZ-Wa-uxM" firstAttribute="top" secondItem="QN9-gb-wQ7" secondAttribute="bottom" constant="5" id="Xrk-sw-L6S"/>
+                <constraint firstItem="QN9-gb-wQ7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gUJ-Rx-zIC"/>
+                <constraint firstItem="UgZ-Wa-uxM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gmZ-iU-lAw"/>
+                <constraint firstAttribute="trailing" secondItem="QN9-gb-wQ7" secondAttribute="trailing" id="hOT-h5-Jat"/>
+                <constraint firstAttribute="bottom" secondItem="UgZ-Wa-uxM" secondAttribute="bottom" constant="5" id="lOh-7a-QTt"/>
+                <constraint firstAttribute="trailing" secondItem="UgZ-Wa-uxM" secondAttribute="trailing" id="rhE-11-Azl"/>
+            </constraints>
+            <size key="customSize" width="151" height="152"/>
+            <connections>
+                <outlet property="tacoImage" destination="QN9-gb-wQ7" id="jNn-Bd-5vI"/>
+                <outlet property="tacoLabel" destination="UgZ-Wa-uxM" id="fBo-b1-DSq"/>
+            </connections>
+            <point key="canvasLocation" x="84.5" y="105"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Brisket" width="1024" height="678"/>
+    </resources>
+</document>
